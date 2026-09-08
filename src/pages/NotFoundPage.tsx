@@ -1,4 +1,4 @@
-import { ArrowLeft } from "@phosphor-icons/react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function NotFoundPage() {

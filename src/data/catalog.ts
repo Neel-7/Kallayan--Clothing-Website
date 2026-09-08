@@ -1,4 +1,4 @@
-import type { Collection, HeroSlide, Product } from "@/types/catalog";
+import type { Collection, EditorialFeature, HeroSlide, Product } from "@/types/catalog";
 
 const media = {
   women: {
@@ -79,43 +79,34 @@ const genericProducts = (prefix: string, names: string[], image: Product["image"
 export const heroSlides: HeroSlide[] = [
   {
     id: "bengal",
-    kicker: "The Bengal edit",
-    title: "Cloth with",
-    italic: "a memory.",
-    description: "Weightless Jamdani and luminous silk, selected for a life between places.",
+    title: "The Bengal edit",
+    description: "Light on the body. Rich in memory.",
     href: "/women",
-    cta: "Shop the story",
-    secondary: "Explore sarees",
+    cta: "Shop now",
     image: media.womenCampaign,
-    align: "left",
-    tone: "light",
   },
   {
     id: "men",
-    kicker: "New forms for him",
-    title: "Cut for",
-    italic: "the present.",
-    description: "Handwoven cloth, easy proportions, and detail that rewards a closer look.",
+    title: "New forms for him",
+    description: "Handwoven cloth. Easy proportions.",
     href: "/men",
-    cta: "Shop menswear",
-    secondary: "Meet the makers",
+    cta: "Shop now",
     image: media.menCampaign,
-    align: "right",
-    tone: "light",
   },
   {
     id: "jewellery",
-    kicker: "Adornment, considered",
-    title: "Small objects.",
-    italic: "Long stories.",
-    description: "Hand-finished forms in antique gold, garnet, and pearl.",
+    title: "Adornment, considered",
+    description: "Hand-finished forms with a long story.",
     href: "/jewellery",
-    cta: "Explore jewellery",
-    secondary: "Our craft standard",
+    cta: "Shop now",
     image: media.jewellery,
-    align: "left",
-    tone: "dark",
   },
+];
+
+export const editorialFeatures: EditorialFeature[] = [
+  { title: "Summer statement", description: "Sarees shaped by colour and light.", href: "/women", image: media.south },
+  { title: "Shimmering echoes", description: "Jewellery finished slowly, by hand.", href: "/jewellery", image: media.jewellery },
+  { title: "A quieter room", description: "Pattern that settles into daily life.", href: "/home", image: media.home },
 ];
 
 export const collections: Collection[] = [
@@ -125,7 +116,6 @@ export const collections: Collection[] = [
     headline: "Woven to move with you.",
     description: "Sarees and separates chosen for their clarity of craft and ease of wear.",
     hero: media.womenCampaign,
-    heroAlign: "left",
     subcategories: [
       { name: "Jamdani", image: media.women },
       { name: "Kanjeevaram", image: media.south },
@@ -141,7 +131,6 @@ export const collections: Collection[] = [
     headline: "Cut for the present.",
     description: "Handwoven cloth, easy proportions, and considered detail.",
     hero: media.menCampaign,
-    heroAlign: "right",
     subcategories: [
       { name: "Panjabis", image: media.indigo },
       { name: "Kurtas", image: media.ivory },
@@ -157,7 +146,6 @@ export const collections: Collection[] = [
     headline: "Made for movement.",
     description: "Soft handloom cotton and celebration clothes that still feel like play.",
     hero: media.kids,
-    heroAlign: "left",
     subcategories: [
       { name: "Girls", image: media.kids },
       { name: "Boys", image: media.kids },
@@ -173,7 +161,6 @@ export const collections: Collection[] = [
     headline: "Pattern, held quietly.",
     description: "Table, bed, and living textiles made to settle into a room rather than stage it.",
     hero: media.home,
-    heroAlign: "right",
     subcategories: [
       { name: "Bedding", image: media.home },
       { name: "Cushions", image: media.home },
@@ -189,7 +176,6 @@ export const collections: Collection[] = [
     headline: "Adornment with a point of view.",
     description: "Sculptural pieces shaped by regional motifs and finished by hand.",
     hero: media.jewellery,
-    heroAlign: "left",
     subcategories: [
       { name: "Necklaces", image: media.jewellery },
       { name: "Earrings", image: media.jewellery },

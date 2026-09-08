@@ -24,21 +24,22 @@ export type Collection = {
   headline: string;
   description: string;
   hero: MediaAsset;
-  heroAlign: "left" | "right";
   subcategories: Subcategory[];
   products: Product[];
 };
 
 export type HeroSlide = {
   id: string;
-  kicker: string;
   title: string;
-  italic: string;
   description: string;
   href: string;
   cta: string;
-  secondary: string;
   image: MediaAsset;
-  align: "left" | "right";
-  tone: "light" | "dark";
+};
+
+export type EditorialFeature = {
+  title: string;
+  description: string;
+  href: string;
+  image: MediaAsset;
 };

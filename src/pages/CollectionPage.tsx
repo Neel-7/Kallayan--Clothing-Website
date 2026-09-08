@@ -4,7 +4,6 @@ import { CollectionBanner } from "@/components/catalog/CollectionBanner";
 import { ProductRail } from "@/components/catalog/ProductRail";
 import { SubcategoryShelf } from "@/components/catalog/SubcategoryShelf";
 import { Newsletter } from "@/components/layout/Footer";
-import { CraftMarquee } from "@/components/home/CraftStory";
 import { collectionBySlug } from "@/data/catalog";
 import { NotFoundPage } from "./NotFoundPage";
 
@@ -23,8 +22,7 @@ export function CollectionPage() {
     <>
       <CollectionBanner collection={collection} />
       <SubcategoryShelf name={collection.name} items={collection.subcategories} />
-      <div id="products"><ProductRail eyebrow={`The ${collection.name} selection`} title="Newly considered" products={collection.products} /></div>
-      <CraftMarquee />
+      <ProductRail eyebrow={`The ${collection.name} selection`} title="Newly considered" products={collection.products} />
       <Newsletter />
     </>
   );

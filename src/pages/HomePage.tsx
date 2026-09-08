@@ -1,9 +1,8 @@
 import { ProductRail } from "@/components/catalog/ProductRail";
 import { Newsletter } from "@/components/layout/Footer";
 import { CategoryBento } from "@/components/home/CategoryBento";
-import { CraftMarquee, CraftStory } from "@/components/home/CraftStory";
+import { EditorialImages } from "@/components/home/EditorialImages";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
-import { VoiceCarousel } from "@/components/home/VoiceCarousel";
 import { featuredProducts } from "@/data/catalog";
 
 export function HomePage() {
@@ -11,14 +10,12 @@ export function HomePage() {
     <>
       <HeroCarousel />
       <CategoryBento />
-      <CraftMarquee />
+      <EditorialImages />
       <ProductRail
         eyebrow="Newly arrived"
         title="Pieces worth meeting"
         products={featuredProducts}
       />
-      <CraftStory />
-      <VoiceCarousel />
       <Newsletter />
     </>
   );
