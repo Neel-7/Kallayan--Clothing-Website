@@ -3,6 +3,7 @@ import { Newsletter } from "@/components/layout/Footer";
 import { CategoryBento } from "@/components/home/CategoryBento";
 import { EditorialImages } from "@/components/home/EditorialImages";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
+import { BrandSignature } from "@/components/home/BrandSignature";
 import { featuredProducts } from "@/data/catalog";
 
 export function HomePage() {
@@ -10,6 +11,7 @@ export function HomePage() {
     <>
       <HeroCarousel />
       <CategoryBento />
+      <BrandSignature />
       <EditorialImages />
       <ProductRail
         eyebrow="Newly arrived"

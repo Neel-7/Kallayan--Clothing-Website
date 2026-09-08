@@ -1,13 +1,18 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { collections } from "@/data/catalog";
+import { ThreadMotif } from "@/components/layout/BrandMotif";
 
 const classNames = ["category-card--women", "category-card--men", "category-card--kids", "category-card--home", "category-card--jewellery"];
 
 export function CategoryBento() {
   return (
     <section className="category-section" aria-labelledby="ways-title">
-      <div className="category-section__heading"><p className="section-kicker">Explore Kallayani</p><h2 id="ways-title">Shop by category</h2></div>
+      <div className="category-section__heading">
+        <ThreadMotif className="section-motif" aria-hidden="true" />
+        <p className="section-kicker">Explore Kallayani</p>
+        <h2 id="ways-title">Shop by category</h2>
+      </div>
       <div className="category-bento">
         {collections.map((item, index) => (
           <Link key={item.slug} to={`/${item.slug}`} className={`category-card ${classNames[index]}`}>

@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BrandMark } from "./BrandMark";
+import { ThreadMotif } from "./BrandMotif";
 
 export function Newsletter() {
   return (
@@ -24,6 +25,9 @@ export function Newsletter() {
 export function Footer() {
   return (
     <footer className="footer">
+      <div className="footer__pattern" aria-hidden="true">
+        {Array.from({ length: 24 }, (_, index) => <ThreadMotif key={index} />)}
+      </div>
       <div className="footer__top shell">
         <BrandMark light />
         <p>Handloom clothing and objects from Bengal and South India, thoughtfully selected for life in the US.</p>
