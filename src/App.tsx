@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { Header } from "@/components/layout/header/Header";
 import { CollectionPage } from "@/pages/CollectionPage";
 import { HomePage } from "@/pages/HomePage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
